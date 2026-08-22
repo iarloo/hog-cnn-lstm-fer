@@ -1,0 +1,25 @@
+CodigoLarissa.py
+# Datasets (licenciamento restrito - documentar acesso no README)
+data/*
+!data/.gitkeep
+
+# Ambiente Python
+__pycache__/
+*.pyc
+.venv/
+*.egg-info/
+
+# VS Code
+.vscode/*
+!.vscode/settings.json
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Modelos treinados (geralmente grandes demais para o repo)
+models/*.h5
+models/*.pt
+models/*.tflite
+
+# Sistema
+.DS_Store
