@@ -1,0 +1,14 @@
+# requirements.txt — dependencias pip do projeto hog-cnn-lstm-fer
+#
+# INSTALACAO (ordem obrigatoria):
+#   1) conda env create -f environment.yml
+#   2) conda activate hog-cnn-lstm-fer
+#   3) pip install -r requirements.txt --extra-index-url https://download.pytorch.org/whl/cpu
+#   4) pip install -r requirements-nodeps.txt --no-deps   <-- ATENCAO, ver arquivo
+#
+# NUNCA gerar com `pip freeze`: ambiente conda+pip misturado.
+# Listar apenas instalacoes DIRETAS.
+
+# PyTorch — build CPU-only.
+# Sufixo +cpu so existe no indice do PyTorch, nao no PyPI.
+torch==2.8.0+cpu

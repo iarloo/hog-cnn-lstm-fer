@@ -1,0 +1,20 @@
+# requirements-nodeps.txt
+#
+# INSTALAR OBRIGATORIAMENTE COM --no-deps:
+#   pip install -r requirements-nodeps.txt --no-deps
+#
+# MOTIVO: sem a flag, o mediapipe puxa opencv-contrib-python
+# (duplicando o opencv 4.7.0 do conda) e forca numpy>=2.0,
+# quebrando a compatibilidade com TensorFlow 2.11.
+# As dependencias reais dele sao satisfeitas pelo conda
+
+# `pip check` acusa 3 divergencias esperadas e aceitas:
+#   - opencv-contrib-python ausente  -> opencv 4.7.0 do conda supre
+#   - sounddevice ausente            -> modulo de audio, nao usado no projeto
+#   - protobuf 4.21.12 vs <4         -> exigencia formal nao cumprida na pratica
+# VALIDADO EM 22/08/2026 em ambiente limpo:
+#   python -c "import mediapipe as mp; mp.solutions.face_mesh.FaceMesh()"  -> ok
+
+# MediaPipe 
+# VALIDADO EM 22/08/2026: python -c "import mediapipe as mp; mp.solutions.face_mesh.FaceMesh()"
+mediapipe==0.10.9

@@ -1,4 +1,6 @@
-CodigoLarissa.py
+src/CodigoLarissa.py
+verify_env.py
+
 # Datasets (licenciamento restrito - documentar acesso no README)
 data/*
 !data/.gitkeep
@@ -17,9 +19,6 @@ __pycache__/
 .ipynb_checkpoints/
 
 # Modelos treinados (geralmente grandes demais para o repo)
-models/*.h5
-models/*.pt
-models/*.tflite
+
 
 # Sistema
-.DS_Store

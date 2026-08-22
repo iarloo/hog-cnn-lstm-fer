@@ -1,0 +1,26 @@
+name: hog-cnn-lstm-fer
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - python=3.9.18
+  # Numerico / dados
+  - scipy=1.13.1 # dependencia do scikit-learn; fixado por afetar resultados numericos
+  - numpy=1.26.4
+  - pandas=2.2.3
+  - scikit-learn=1.6.1
+  # Visao computacional
+  - opencv=4.7.0
+  - dlib=19.24.0
+  # Deep learning
+  - tensorflow=2.11.0
+  # Visualizacao
+  - matplotlib=3.9.1
+  - seaborn=0.13.2
+  # GUI
+  - pyqt=5.15.9
+  # Datasets
+  - kagglehub=0.3.8
+  # Ambiente de trabalho
+  - jupyter
+  - ipykernel
